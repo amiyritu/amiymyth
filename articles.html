@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" class="light h-full">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+    <link rel="shortcut icon" href="favicon.html"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+    <title>Articles | The Truth Should Be Ordinary</title>
+    <meta name="description" content="In a world where facts can be blurred and science, often filtered, the truth can be hard to find."/>
+    <meta name="robots" content="index,follow"/>
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:title" content="Articles | The Truth Should Be Ordinary"/>
+    <meta property="twitter:description" content="In a world where facts can be blurred and science, often filtered, the truth can be hard to find."/>
+    <meta property="twitter:image" content="../cdn.sanity.io/images/f3anwa5j/production/6ef0ad0787a9d0a7e93af1950218d4ef04119b17-4000x2250cb63.jpg?rect=0,75,4000,2100&amp;w=1200&amp;h=630&amp;fit=max&amp;auto=format"/>
+    <meta property="og:title" content="Articles | The Truth Should Be Ordinary"/>
+    <meta property="og:description" content="In a world where facts can be blurred and science, often filtered, the truth can be hard to find."/>
+    <meta property="og:image" content="../cdn.sanity.io/images/f3anwa5j/production/6ef0ad0787a9d0a7e93af1950218d4ef04119b17-4000x2250cb63.jpg?rect=0,75,4000,2100&amp;w=1200&amp;h=630&amp;fit=max&amp;auto=format"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <link rel="stylesheet" href="assets/root-C9BsmYHI.css"/>
+    <link rel="stylesheet" href="assets/fonts-Ba1hhX7K.css"/>
+    <link rel="stylesheet" href="assets/web-C-xyohTp.css"/>
+    <link rel="preload" href="fonts/HelveticaMonospacedRoman.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/HelveticaMonospacedRoman.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/HelveticaMonospacedItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/HelveticaMonospacedItalic.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/HelveticaMonospacedBold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/HelveticaMonospacedBold.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/HelveticaMonospacedBoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/HelveticaMonospacedBoldItalic.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/NeueHaasUnicaW1G-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/NeueHaasUnicaW1G-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/NeueHaasUnicaW1G-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous"/>
+    <style>
+      /* Button color overrides to match .enter-button from index.html */
+      /* Target all buttons with group/button class (Open, About, Manifest buttons) */
+      /* Colors apply to both mobile and desktop */
+
+      /* Add these styles to ensure buttons are always visible */
+    .text-title-30 {
+    line-height: 3.75rem !important;
+    }
+
+      button[class*="group/button"] {
+        background-color: #985557 !important;
+        color: #ffffff !important;
+      }
+
+      button[class*="group/button"]:hover {
+        background-color: #985557 !important;
+        color: #000000 !important;
+      }
+
+      /* Decorative spans inside buttons (override grey background) */
+      button[class*="group/button"] span.delay-0,
+      button[class*="group/button"] span.delay-100,
+      button[class*="group/button"] span.delay-200 {
+        background-color: #d7acb7 !important;
+      }
+
+      /* Ensure buttons are completely hidden by default at all screen sizes */
+      button[class*="group/button"] {
+        transform: translateY(100%) !important;
+        opacity: 0 !important;
+      }
+
+      /* Show button smoothly on hover at all screen sizes */
+      a.group:hover button[class*="group/button"],
+      .group:hover button[class*="group/button"] {
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+      }
+
+      /* Desktop only - not mobile */
+      @media (min-width: 768px) {
+        button[class*="group/button"] {
+          padding: 0 20px !important;
+          top: 4rem !important;
+          height: 42px !important;
+        }
+      }
+
+      /* NEW: Line-by-line title animation styles */
+      .title-line {
+        display: inline;
+        position: relative;
+        background: linear-gradient(to right, #d7d7d7 0%, #d7d7d7 100%);
+        background-size: 0% 100%;
+        background-repeat: no-repeat;
+        transition: background-size 0.7s ease-out;
+      }
+
+      a.group:hover .title-line:nth-of-type(1),
+      .group:hover .title-line:nth-of-type(1) {
+        background-size: 100% 100%;
+        transition-delay: 0s;
+      }
+
+      a.group:hover .title-line:nth-of-type(2),
+      .group:hover .title-line:nth-of-type(2) {
+        background-size: 100% 100%;
+        transition-delay: 0.35s;
+      }
+
+      a.group:hover .title-line:nth-of-type(3),
+      .group:hover .title-line:nth-of-type(3) {
+        background-size: 100% 100%;
+        transition-delay: 0.7s;
+      }
+
+      /* Hide the old background span */
+      div.relative.overflow-hidden > span.bg-light-grey {
+        display: none !important;
+      }
+
+      /* Hero header styles for AMIY'S TRUTH OVER TRENDS */
+      .hero-header {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 20px 0;
+      }
+
+      .hero-logo {
+        width: 64px;
+        height: auto;
+        margin-right: 8px;
+      }
+
+      .hero-title {
+        display: block;
+        margin: 0;
+      }
+
+      .h1-main {
+        font-size: clamp(28px, 4vw, 44px);
+        font-weight: 700;
+        font-family: Georgia, serif;
+        color: #000;
+        letter-spacing: 1px;
+        line-height: 1.05;
+      }
+
+      .h1-accent {
+        display: block;
+        font-size: clamp(18px, 3.5vw, 30px);
+        font-weight: 300;
+        font-family: system-ui, sans-serif;
+        color: #a56273;
+        letter-spacing: 1px;
+        margin-top: 6px;
+      }
+
+      /* Responsive adjustments for hero header */
+      @media (max-width: 768px) {
+        .hero-logo {
+          width: 48px;
+        }
+
+        .h1-main {
+          font-size: clamp(22px, 7vw, 34px);
+        }
+
+        .h1-accent {
+          font-size: clamp(14px, 6vw, 20px);
+        }
+      }
+    </style>
+  </head>
+  <body class="h-full bg-white font-sans text-charcoal">
+    <div class="flex flex-col">
+      <header class="container mb-24 pt-container-padding lg:mb-40 relative animate-glitch-1-horizontal font-mono text-subtitle-30 motion-reduce:animate-none">
+        <div class="mb-40 justify-between md:flex">
+          <div class="flex flex-col items-start gap-24 md:flex-row">
+            <div class="hero-header" style="justify-content: flex-start;">
+              <img class="hero-logo" src="assets/logo.gif" alt="Logo" style="display: block;" loading="lazy"/>
+              <h1 class="hero-title" style="margin: 0;">
+                <span class="h1-main">AMIY'S</span>
+                <span class="h1-accent">TRUTH OVER TRENDS</span>
+              </h1>
+            </div>
+          </div>
+          <div class="flex-col items-end text-body-20 font-medium md:flex">
+            <form style="display:none" class="inline-block absolute right-container-padding top-container-padding md:static" data-discover="true">
+              <button class="relative flex h-32 items-center justify-between gap-8 overflow-hidden border border-black p-3" type="submit">
+                <span class="absolute right-auto z-behind h-24 min-w-24 transition-all bg-light-grey"></span>
+              </button>
+            </form>
+            <div class="flex justify-between gap-16 md:justify-end">
+              <a class="group inline-flex shrink-0 items-center justify-center gap-16 cursor-pointer disabled:cursor-default transition-colors duration-300 ease-out motion-reduce:transition-none mt-24 md:mt-8" href="manifesto.html" data-discover="true">
+                <span class="uppercase">Manifesto</span>
+                <svg class="inline-block shrink-0 text-current transition-colors duration-300 ease-out motion-reduce:transition-none border border-solid size-[1.5em] group-hover:bg-light-grey" aria-label="caret-right">
+                  <use href="assets/spritemap.1a0be9ff.svg#icon-caret-right"></use>
+                </svg>
+              </a>
+              <a class="group inline-flex shrink-0 items-center justify-center gap-16 cursor-pointer disabled:cursor-default transition-colors duration-300 ease-out motion-reduce:transition-none mt-24 md:mt-8" href="about.html" data-discover="true">
+                <span class="uppercase">About</span>
+                <svg class="inline-block shrink-0 text-current transition-colors duration-300 ease-out motion-reduce:transition-none border border-solid size-[1.5em] group-hover:bg-light-grey" aria-label="caret-right">
+                  <use href="assets/spritemap.1a0be9ff.svg#icon-caret-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="fixed bottom-0 left-0 z-10 h-48 w-full bg-white md:static md:h-auto" aria-hidden="true">
+          <div class="whitespace-nowrap overflow-clip marquee-text py-2 flex h-full items-center">
+            <div class="marquee-animation flex items-start w-max [&gt;*]:px-[0.35em]">
+              <p class="text-caption-20"><span> 09.01.26 at 19:37:39 IST [09 TRUTH DROPS]</span></p>
+              <p class="text-caption-20"><span> 09.01.26 at 19:37:39 IST [09 TRUTH DROPS]</span></p>
+              <p class="text-caption-20"><span> 09.01.26 at 19:37:39 IST [09 TRUTH DROPS]</span></p>
+              <p class="text-caption-20"><span> 09.01.26 at 19:37:39 IST [09 TRUTH DROPS]</span></p>
+              <p class="text-caption-20"><span> 09.01.26 at 19:37:39 IST [09 TRUTH DROPS]</span></p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="container animate-glitch-1-horizontal motion-reduce:animate-none">
+        <ul>
+          <li>
+            <a class="group relative mb-24 flex flex-col gap-24 pb-40 pt-16 overflow-hidden border-b border-dashed border-light-grey md:mb-0 md:flex-row md:py-24" href="articles/chemical-acne-products-might-be-damaging-your-skin.html" data-discover="true">
+              <div class="flex flex-col gap-24 md:flex-row">
+                <div class="flex min-w-[13vw] flex-col gap-24 font-mono md:mt-8 lg:mt-12 lg:gap-48">
+                  <p class="text-caption-30"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em]">[09]</span></p>
+                  <p class="text-caption-20 text-black/50"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em] before:bottom-1 before:opacity-40 before:delay-100">Jan 22.25</span></p>
+                </div>
+                <div class="relative overflow-hidden">
+                  <p class="text-title-30 font-bold relative z-10" style="color: #985557;" data-title="Chemical acne products might be damaging your skin">Chemical acne products might be damaging your skin</p>
+                  <span class="absolute inset-0 bg-light-grey transform -translate-x-full opacity-0 transition-all duration-700 ease-out group-hover:translate-x-0 group-hover:opacity-100 z-0"></span>
+                </div>
+                <button class="relative inline-flex shrink-0 items-center justify-between gap-8 overflow-hidden px-8 py-2 cursor-pointer disabled:cursor-default ease-out motion-reduce:transition-none [&>svg]:relative [&>span]:relative bg-black text-white hover:text-black absolute -bottom-1 right-0 font-mono text-body-20 uppercase translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 group/button" tabindex="-1">
+                  <div class="translate-z-0 absolute left-0 z-0 flex size-full flex-col [&>span]:size-full [&>span]:origin-top-right [&>span]:-translate-x-full [&>span]:scale-[1.1] [&>span]:bg-grey [&>span]:transition-transform [&>span]:duration-700 [&>span]:ease-out [&>span]:group-hover/button:translate-x-0">
+                    <span class="delay-0"></span>
+                    <span class="delay-100"></span>
+                    <span class="delay-200"></span>
+                  </div>
+                  <span>.Open</span>
+                </button>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="group relative mb-24 flex flex-col gap-24 pb-40 pt-16 overflow-hidden border-b border-dashed border-light-grey md:mb-0 md:flex-row md:py-24" href="articles/natural-acne-oral-drops-is-surprisingly-more-effective-than-chemical-creams.html" data-discover="true">
+              <div class="flex flex-col gap-24 md:flex-row">
+                <div class="flex min-w-[13vw] flex-col gap-24 font-mono md:mt-8 lg:mt-12 lg:gap-48">
+                  <p class="text-caption-30"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em]">[08]</span></p>
+                  <p class="text-caption-20 text-black/50"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em] before:bottom-1 before:opacity-40 before:delay-100">Jan 22.25</span></p>
+                </div>
+                <div class="relative overflow-hidden">
+                  <p class="text-title-30 font-bold relative z-10" style="color: #985557;" data-title="Natural acne oral drops is surprisingly more effective than chemical creams">Natural acne oral drops is surprisingly more effective than chemical creams</p>
+                  <span class="absolute inset-0 bg-light-grey transform -translate-x-full opacity-0 transition-all duration-700 ease-out group-hover:translate-x-0 group-hover:opacity-100 z-0"></span>
+                </div>
+                <button class="relative inline-flex shrink-0 items-center justify-between gap-8 overflow-hidden px-8 py-2 cursor-pointer disabled:cursor-default ease-out motion-reduce:transition-none [&>svg]:relative [&>span]:relative bg-black text-white hover:text-black absolute -bottom-1 right-0 font-mono text-body-20 uppercase translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 group/button" tabindex="-1">
+                  <div class="translate-z-0 absolute left-0 z-0 flex size-full flex-col [&>span]:size-full [&>span]:origin-top-right [&>span]:-translate-x-full [&>span]:scale-[1.1] [&>span]:bg-grey [&>span]:transition-transform [&>span]:duration-700 [&>span]:ease-out [&>span]:group-hover/button:translate-x-0">
+                    <span class="delay-0"></span>
+                    <span class="delay-100"></span>
+                    <span class="delay-200"></span>
+                  </div>
+                  <span>.Open</span>
+                </button>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="group relative mb-24 flex flex-col gap-24 pb-40 pt-16 overflow-hidden border-b border-dashed border-light-grey md:mb-0 md:flex-row md:py-24" href="articles/your-spf-is-causing-coral-bleaching.html" data-discover="true">
+              <div class="flex flex-col gap-24 md:flex-row">
+                <div class="flex min-w-[13vw] flex-col gap-24 font-mono md:mt-8 lg:mt-12 lg:gap-48">
+                  <p class="text-caption-30"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em]">[07]</span></p>
+                  <p class="text-caption-20 text-black/50"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em] before:bottom-1 before:opacity-40 before:delay-100">Jan 22.25</span></p>
+                </div>
+                <div class="relative overflow-hidden">
+                  <p class="text-title-30 font-bold relative z-10" style="color: #985557;" data-title="Your SPF is causing coral bleaching">Your SPF is causing coral bleaching</p>
+                  <span class="absolute inset-0 bg-light-grey transform -translate-x-full opacity-0 transition-all duration-700 ease-out group-hover:translate-x-0 group-hover:opacity-100 z-0"></span>
+                </div>
+                <button class="relative inline-flex shrink-0 items-center justify-between gap-8 overflow-hidden px-8 py-2 cursor-pointer disabled:cursor-default ease-out motion-reduce:transition-none [&>svg]:relative [&>span]:relative bg-black text-white hover:text-black absolute -bottom-1 right-0 font-mono text-body-20 uppercase translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 group/button" tabindex="-1">
+                  <div class="translate-z-0 absolute left-0 z-0 flex size-full flex-col [&>span]:size-full [&>span]:origin-top-right [&>span]:-translate-x-full [&>span]:scale-[1.1] [&>span]:bg-grey [&>span]:transition-transform [&>span]:duration-700 [&>span]:ease-out [&>span]:group-hover/button:translate-x-0">
+                    <span class="delay-0"></span>
+                    <span class="delay-100"></span>
+                    <span class="delay-200"></span>
+                  </div>
+                  <span>.Open</span>
+                </button>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="group relative mb-24 flex flex-col gap-24 pb-40 pt-16 overflow-hidden border-b border-dashed border-light-grey md:mb-0 md:flex-row md:py-24" href="articles/parabens-can-be-toxic-too.html" data-discover="true">
+              <div class="flex flex-col gap-24 md:flex-row">
+                <div class="flex min-w-[13vw] flex-col gap-24 font-mono md:mt-8 lg:mt-12 lg:gap-48">
+                  <p class="text-caption-30"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em]">[06]</span></p>
+                  <p class="text-caption-20 text-black/50"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em] before:bottom-1 before:opacity-40 before:delay-100">Jan 22.25</span></p>
+                </div>
+                <div class="relative overflow-hidden">
+                  <p class="text-title-30 font-bold relative z-10" style="color: #985557;" data-title="Parabens can be toxic too">Parabens can be toxic too</p>
+                  <span class="absolute inset-0 bg-light-grey transform -translate-x-full opacity-0 transition-all duration-700 ease-out group-hover:translate-x-0 group-hover:opacity-100 z-0"></span>
+                </div>
+                <button class="relative inline-flex shrink-0 items-center justify-between gap-8 overflow-hidden px-8 py-2 cursor-pointer disabled:cursor-default ease-out motion-reduce:transition-none [&>svg]:relative [&>span]:relative bg-black text-white hover:text-black absolute -bottom-1 right-0 font-mono text-body-20 uppercase translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 group/button" tabindex="-1">
+                  <div class="translate-z-0 absolute left-0 z-0 flex size-full flex-col [&>span]:size-full [&>span]:origin-top-right [&>span]:-translate-x-full [&>span]:scale-[1.1] [&>span]:bg-grey [&>span]:transition-transform [&>span]:duration-700 [&>span]:ease-out [&>span]:group-hover/button:translate-x-0">
+                    <span class="delay-0"></span>
+                    <span class="delay-100"></span>
+                    <span class="delay-200"></span>
+                  </div>
+                  <span>.Open</span>
+                </button>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="group relative mb-24 flex flex-col gap-24 pb-40 pt-16 overflow-hidden border-b border-dashed border-light-grey md:mb-0 md:flex-row md:py-24" href="articles/chemical-or-toxic-beauty-isnt-a-trend.html" data-discover="true">
+              <div class="flex flex-col gap-24 md:flex-row">
+                <div class="flex min-w-[13vw] flex-col gap-24 font-mono md:mt-8 lg:mt-12 lg:gap-48">
+                  <p class="text-caption-30"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em]">[05]</span></p>
+                  <p class="text-caption-20 text-black/50"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em] before:bottom-1 before:opacity-40 before:delay-100">Jan 22.25</span></p>
+                </div>
+                <div class="relative overflow-hidden">
+                  <p class="text-title-30 font-bold relative z-10" style="color: #985557;" data-title='"Chemical" or Toxic beauty isn&apos;t a trend'>"Chemical" or Toxic beauty isn't a trend</p>
+                  <span class="absolute inset-0 bg-light-grey transform -translate-x-full opacity-0 transition-all duration-700 ease-out group-hover:translate-x-0 group-hover:opacity-100 z-0"></span>
+                </div>
+                <button class="relative inline-flex shrink-0 items-center justify-between gap-8 overflow-hidden px-8 py-2 cursor-pointer disabled:cursor-default ease-out motion-reduce:transition-none [&>svg]:relative [&>span]:relative bg-black text-white hover:text-black absolute -bottom-1 right-0 font-mono text-body-20 uppercase translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 group/button" tabindex="-1">
+                  <div class="translate-z-0 absolute left-0 z-0 flex size-full flex-col [&>span]:size-full [&>span]:origin-top-right [&>span]:-translate-x-full [&>span]:scale-[1.1] [&>span]:bg-grey [&>span]:transition-transform [&>span]:duration-700 [&>span]:ease-out [&>span]:group-hover/button:translate-x-0">
+                    <span class="delay-0"></span>
+                    <span class="delay-100"></span>
+                    <span class="delay-200"></span>
+                  </div>
+                  <span>.Open</span>
+                </button>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="group relative mb-24 flex flex-col gap-24 pb-40 pt-16 overflow-hidden border-b border-dashed border-light-grey md:mb-0 md:flex-row md:py-24" href="articles/not-tested-on-animals-is-already-an-industry-standard.html" data-discover="true">
+              <div class="flex flex-col gap-24 md:flex-row">
+                <div class="flex min-w-[13vw] flex-col gap-24 font-mono md:mt-8 lg:mt-12 lg:gap-48">
+                  <p class="text-caption-30"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em]">[04]</span></p>
+                  <p class="text-caption-20 text-black/50"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em] before:bottom-1 before:opacity-40 before:delay-100">Jan 22.25</span></p>
+                </div>
+                <div class="relative overflow-hidden">
+                  <p class="text-title-30 font-bold relative z-10" style="color: #985557;" data-title="Not tested on animals is already an industry standard">Not tested on animals is already an industry standard</p>
+                  <span class="absolute inset-0 bg-light-grey transform -translate-x-full opacity-0 transition-all duration-700 ease-out group-hover:translate-x-0 group-hover:opacity-100 z-0"></span>
+                </div>
+                <button class="relative inline-flex shrink-0 items-center justify-between gap-8 overflow-hidden px-8 py-2 cursor-pointer disabled:cursor-default ease-out motion-reduce:transition-none [&>svg]:relative [&>span]:relative bg-black text-white hover:text-black absolute -bottom-1 right-0 font-mono text-body-20 uppercase translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 group/button" tabindex="-1">
+                  <div class="translate-z-0 absolute left-0 z-0 flex size-full flex-col [&>span]:size-full [&>span]:origin-top-right [&>span]:-translate-x-full [&>span]:scale-[1.1] [&>span]:bg-grey [&>span]:transition-transform [&>span]:duration-700 [&>span]:ease-out [&>span]:group-hover/button:translate-x-0">
+                    <span class="delay-0"></span>
+                    <span class="delay-100"></span>
+                    <span class="delay-200"></span>
+                  </div>
+                  <span>.Open</span>
+                </button>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="group relative mb-24 flex flex-col gap-24 pb-40 pt-16 overflow-hidden border-b border-dashed border-light-grey md:mb-0 md:flex-row md:py-24" href="articles/your-acne-cream-is-not-targeting-its-root-cause-but.html" data-discover="true">
+              <div class="flex flex-col gap-24 md:flex-row">
+                <div class="flex min-w-[13vw] flex-col gap-24 font-mono md:mt-8 lg:mt-12 lg:gap-48">
+                  <p class="text-caption-30"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em]">[03]</span></p>
+                  <p class="text-caption-20 text-black/50"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em] before:bottom-1 before:opacity-40 before:delay-100">Jan 22.25</span></p>
+                </div>
+                <div class="relative overflow-hidden">
+                  <p class="text-title-30 font-bold relative z-10" style="color: #985557;" data-title="Your Acne cream is not targeting its root-cause but...">Your Acne cream is not targeting its root-cause but...</p>
+                  <span class="absolute inset-0 bg-light-grey transform -translate-x-full opacity-0 transition-all duration-700 ease-out group-hover:translate-x-0 group-hover:opacity-100 z-0"></span>
+                </div>
+                <button class="relative inline-flex shrink-0 items-center justify-between gap-8 overflow-hidden px-8 py-2 cursor-pointer disabled:cursor-default ease-out motion-reduce:transition-none [&>svg]:relative [&>span]:relative bg-black text-white hover:text-black absolute -bottom-1 right-0 font-mono text-body-20 uppercase translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 group/button" tabindex="-1">
+                  <div class="translate-z-0 absolute left-0 z-0 flex size-full flex-col [&>span]:size-full [&>span]:origin-top-right [&>span]:-translate-x-full [&>span]:scale-[1.1] [&>span]:bg-grey [&>span]:transition-transform [&>span]:duration-700 [&>span]:ease-out [&>span]:group-hover/button:translate-x-0">
+                    <span class="delay-0"></span>
+                    <span class="delay-100"></span>
+                    <span class="delay-200"></span>
+                  </div>
+                  <span>.Open</span>
+                </button>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="group relative mb-24 flex flex-col gap-24 pb-40 pt-16 overflow-hidden border-b border-dashed border-light-grey md:mb-0 md:flex-row md:py-24" href="about.html">
+              <div class="flex min-w-[13vw] flex-col gap-24 font-mono uppercase md:mt-8 lg:mt-12 lg:gap-48">
+                <p class="text-caption-30 text-black/50"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em]">[02]</span></p>
+                <p class="text-caption-20"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em] before:bottom-1 before:opacity-40 before:delay-100">About</span></p>
+              </div>
+              <div class="relative overflow-hidden">
+                <p class="text-title-30 font-bold relative z-10" style="color: #985557;" data-title="Innovative skincare can cost Rs. 1190">Innovative skincare can cost Rs. 1190</p>
+                <span class="absolute inset-0 bg-light-grey transform -translate-x-full transition-transform duration-300 ease-out group-hover:translate-x-0 z-0"></span>
+              </div>
+              <button class="relative inline-flex shrink-0 items-center justify-between gap-8 overflow-hidden px-8 py-2 cursor-pointer disabled:cursor-default ease-out motion-reduce:transition-none [&>svg]:relative [&>span]:relative bg-black text-white hover:text-black absolute -bottom-1 right-0 font-mono text-body-20 uppercase translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 group/button" tabindex="-1">
+                <div class="translate-z-0 absolute left-0 z-0 flex size-full flex-col [&>span]:size-full [&>span]:origin-top-right [&>span]:-translate-x-full [&>span]:scale-[1.1] [&>span]:bg-grey [&>span]:transition-transform [&>span]:duration-700 [&>span]:ease-out [&>span]:group-hover/button:translate-x-0">
+                  <span class="delay-0"></span>
+                  <span class="delay-100"></span>
+                  <span class="delay-200"></span>
+                </div>
+                <span>.About</span>
+                <svg class="inline-block size-[1em] shrink-0 text-current transition-colors duration-300 ease-out motion-reduce:transition-none border border-solid" aria-label="arrow-right">
+                  <use href="assets/spritemap.1a0be9ff.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </a>
+          </li>
+          <li>
+            <a class="group relative mb-24 flex flex-col gap-24 pb-40 pt-16 overflow-hidden border-b border-dashed border-light-grey md:mb-0 md:flex-row md:py-24" href="manifesto.html">
+              <div class="flex min-w-[13vw] flex-col gap-24 font-mono uppercase md:mt-8 lg:mt-12 lg:gap-48">
+                <p class="text-caption-30 text-black/50"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em]">[01]</span></p>
+                <p class="text-caption-20"><span class="relative w-auto overflow-hidden before:absolute before:z-behind before:hidden before:h-full before:w-[110%] before:bg-light-grey before:-translate-x-full before:transition-transform before:duration-300 group-hover:before:translate-x-0 lg:before:block mb-[-0.1em] pb-[0.1em] before:bottom-1 before:opacity-40 before:delay-100">Manifesto</span></p>
+              </div>
+              <div class="relative overflow-hidden">
+                <p class="text-title-30 font-bold relative z-10" style="color: #985557;" data-title='"Miracle creams" aren&apos;t miracles if no one can afford them'>"Miracle creams" aren't miracles if no one can afford them</p>
+                <span class="absolute inset-0 bg-light-grey transform -translate-x-full transition-transform duration-300 ease-out group-hover:translate-x-0 z-0"></span>
+              </div>
+              <button class="relative inline-flex shrink-0 items-center justify-between gap-8 overflow-hidden px-8 py-2 cursor-pointer disabled:cursor-default ease-out motion-reduce:transition-none [&>svg]:relative [&>span]:relative bg-black text-white hover:text-black absolute -bottom-1 right-0 font-mono text-body-20 uppercase translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 group/button" tabindex="-1">
+                <div class="translate-z-0 absolute left-0 z-0 flex size-full flex-col [&>span]:size-full [&>span]:origin-top-right [&>span]:-translate-x-full [&>span]:scale-[1.1] [&>span]:bg-grey [&>span]:transition-transform [&>span]:duration-700 [&>span]:ease-out [&>span]:group-hover/button:translate-x-0">
+                  <span class="delay-0"></span>
+                  <span class="delay-100"></span>
+                  <span class="delay-200"></span>
+                </div>
+                <span>.Manifesto</span>
+                <svg class="inline-block size-[1em] shrink-0 text-current transition-colors duration-300 ease-out motion-reduce:transition-none border border-solid" aria-label="arrow-right">
+                  <use href="assets/spritemap.1a0be9ff.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </a>
+          </li>
+        </ul>
+      </main>
+      <footer class="container">
+        <div class="flex flex-col gap-24 py-88 font-mono lg:py-container-padding md:flex-row md:items-start md:justify-between">
+          <div class="text-legal-caption">
+            <nav class="mb-24 flex flex-col items-center gap-5 uppercase md:mb-40 md:items-start">
+              <a class="group inline-flex shrink-0 items-center justify-center cursor-pointer disabled:cursor-default transition-colors duration-300 ease-out motion-reduce:transition-none relative overflow-hidden pb-3 after:absolute after:content-[''] after:w-full after:h-[1px] after:border-b after:border-dashed after:left-0 after:bottom-0 after:transition-opacity after:duration-200 after:opacity-0 hover:after:opacity-100 gap-4" href="https://amiynaturals.com/pages/terms-conditions" target="_blank">
+                <svg class="inline-block shrink-0 text-current transition-colors duration-300 ease-out motion-reduce:transition-none size-[1.1em]" aria-label="caret-right">
+                  <use href="assets/spritemap.1a0be9ff.svg#icon-caret-right"></use>
+                </svg>Terms &amp; Conditions
+              </a>
+              <a class="group inline-flex shrink-0 items-center justify-center cursor-pointer disabled:cursor-default transition-colors duration-300 ease-out motion-reduce:transition-none relative overflow-hidden pb-3 after:absolute after:content-[''] after:w-full after:h-[1px] after:border-b after:border-dashed after:left-0 after:bottom-0 after:transition-opacity after:duration-200 after:opacity-0 hover:after:opacity-100 gap-4" href="https://amiynaturals.com/pages/privacy-policy" target="_blank">
+                <svg class="inline-block shrink-0 text-current transition-colors duration-300 ease-out motion-reduce:transition-none size-[1.1em]" aria-label="caret-right">
+                  <use href="assets/spritemap.1a0be9ff.svg#icon-caret-right"></use>
+                </svg>Privacy Policy
+              </a>
+            </nav>
+          </div>
+          <div class="-order-1 text-center md:order-1">
+            <a class="group inline-flex shrink-0 items-center justify-center gap-16 cursor-pointer disabled:cursor-default transition-colors duration-300 ease-out motion-reduce:transition-none mb-16 text-body-20 uppercase" href="https://amiynaturals.com/pages/offers" target="_blank">
+              bday sales
+              <svg class="inline-block shrink-0 text-current transition-colors duration-300 ease-out motion-reduce:transition-none border border-solid size-[1.5em] group-hover:bg-light-grey" aria-label="arrow-external">
+                <use href="assets/spritemap.1a0be9ff.svg#icon-arrow-external"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      function updateTimestamp() {
+        const now = new Date();
+        
+        // Convert to IST (UTC+5:30)
+        const istTime = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
+        
+        // Format as DD.MM.YY at HH:MM:SS IST
+        const day = String(istTime.getDate()).padStart(2, '0');
+        const month = String(istTime.getMonth() + 1).padStart(2, '0');
+        const year = String(istTime.getFullYear()).slice(-2);
+        const hours = String(istTime.getHours()).padStart(2, '0');
+        const minutes = String(istTime.getMinutes()).padStart(2, '0');
+        const seconds = String(istTime.getSeconds()).padStart(2, '0');
+        
+        const timestamp = `${day}.${month}.${year} at ${hours}:${minutes}:${seconds} IST [09 TRUTH DROPS]`;
+        
+        // Update all marquee text spans
+        const spans = document.querySelectorAll('.marquee-animation span');
+        spans.forEach(span => {
+          const coloredTime = `<span style="color: #985557;">${day}.${month}.${year} at ${hours}:${minutes}:${seconds} IST</span> [09 TRUTH DROPS]`;
+          span.innerHTML = coloredTime;
+        });
+        
+        // Add gap between items via CSS if not already done
+        if (!document.getElementById('marquee-spacing-style')) {
+          const style = document.createElement('style');
+          style.id = 'marquee-spacing-style';
+          style.textContent = '.marquee-animation p { margin-right: 60px; }';
+          document.head.appendChild(style);
+        }
+      }
+      
+      // Update immediately on load
+      updateTimestamp();
+      
+      // Update every second
+      setInterval(updateTimestamp, 1000);
+    </script>
+    
+    <script>
+      // NEW: Line-by-line title animation script
+      function wrapTitleLines() {
+        const titles = document.querySelectorAll('.text-title-30[data-title]');
+        
+        titles.forEach(title => {
+          const text = title.getAttribute('data-title');
+          const color = title.style.color;
+          
+          // Create temporary element to measure line breaks
+          const temp = document.createElement('div');
+          temp.style.cssText = window.getComputedStyle(title).cssText;
+          temp.style.position = 'absolute';
+          temp.style.visibility = 'hidden';
+          temp.style.width = title.offsetWidth + 'px';
+          temp.style.display = 'inline';
+          document.body.appendChild(temp);
+          
+          const words = text.split(' ');
+          let lines = [];
+          let currentLine = [];
+          let previousTop = -1;
+          
+          // Measure each word to detect line breaks
+          words.forEach((word) => {
+            const testLine = currentLine.concat(word).join(' ');
+            temp.textContent = testLine;
+            
+            const range = document.createRange();
+            const textNode = temp.firstChild;
+            
+            if (textNode) {
+              range.selectNodeContents(textNode);
+              const rect = range.getBoundingClientRect();
+              
+              if (previousTop !== -1 && rect.top > previousTop) {
+                lines.push(currentLine.join(' '));
+                currentLine = [word];
+              } else {
+                currentLine.push(word);
+              }
+              previousTop = rect.top;
+            }
+          });
+          
+          if (currentLine.length > 0) {
+            lines.push(currentLine.join(' '));
+          }
+          
+          document.body.removeChild(temp);
+          
+          // Wrap each line in a span for individual animation
+          if (lines.length > 1) {
+            title.innerHTML = lines.map(line => 
+              `<span class="title-line">${line}</span>`
+            ).join(' ');
+          } else {
+            title.innerHTML = `<span class="title-line">${text}</span>`;
+          }
+        });
+      }
+      
+      // Run on load and resize
+      window.addEventListener('load', wrapTitleLines);
+      let resizeTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(wrapTitleLines, 250);
+      });
+    </script>
+  </body>
+</html
