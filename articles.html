@@ -40,7 +40,7 @@
 
       /* Add these styles to ensure buttons are always visible */
     .text-title-30 {
-    line-height: 3.75rem !important;
+    line-height: 1.2 !important;
     }
 
       button[class*="group/button"] {
@@ -74,13 +74,31 @@
       }
 
       /* Desktop only - not mobile */
-      @media (min-width: 768px) {
-        button[class*="group/button"] {
-          padding: 0 20px !important;
-          top: 4rem !important;
-          height: 42px !important;
-        }
+       /* UPDATED: Button positioning to stick to border line */
+    button[class*="group/button"] {
+      position: absolute !important;
+      right: 0 !important;
+      bottom: -1px !important;
+      padding: 0 20px !important;
+      height: 42px !important;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 767px) {
+      button[class*="group/button"] {
+        bottom: -1px !important;
+        height: 38px !important;
+        padding: 0 16px !important;
       }
+    }
+
+    /* Desktop only - additional refinements */
+    @media (min-width: 768px) {
+      button[class*="group/button"] {
+        padding: 0 20px !important;
+        height: 42px !important;
+      }
+    }
 
       /* NEW: Line-by-line title animation styles */
       .title-line {
