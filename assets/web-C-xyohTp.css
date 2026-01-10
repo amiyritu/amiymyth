@@ -336,7 +336,7 @@ video {
   max-width: 100% !important;
 }
 html {
-  --white: 255, 255, 255;
+  --white: 252, 247, 241;
   --light-grey: 217, 217, 214;
   --grey: 178, 180, 178;
   --charcoal: 38, 38, 38;
