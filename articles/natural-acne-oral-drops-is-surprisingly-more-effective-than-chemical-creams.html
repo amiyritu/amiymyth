@@ -75,6 +75,120 @@
         margin: 0 !important;
         padding: 0 !important;
       }
+
+      /* Video thumbnail styles */
+      .video-thumbnail-container {
+        position: relative;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      /* Video modal styles */
+      .video-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 10000;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .video-modal.active {
+        display: flex;
+      }
+
+      .video-modal-content {
+        position: relative;
+        width: 90%;
+        max-width: 1200px;
+      }
+
+      .video-modal video {
+        width: 100%;
+        height: auto;
+        max-height: 90vh;
+        display: block;
+      }
+
+      .video-modal-close {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+      }
+
+      .video-modal-close:hover {
+        color: #985557;
+      }
+
+      .video-thumbnail {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .play-button-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        pointer-events: none;
+      }
+
+      .video-thumbnail-container:hover .play-button-overlay {
+        background: rgba(152, 85, 87, 0.9);
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+
+      .play-button-icon {
+        width: 0;
+        height: 0;
+        border-left: 28px solid white;
+        border-top: 16px solid transparent;
+        border-bottom: 16px solid transparent;
+        margin-left: 6px;
+      }
+
+      @media (max-width: 767px) {
+        .play-button-overlay {
+          width: 60px;
+          height: 60px;
+        }
+
+        .play-button-icon {
+          border-left: 20px solid white;
+          border-top: 12px solid transparent;
+          border-bottom: 12px solid transparent;
+          margin-left: 4px;
+        }
+
+        .video-modal-content {
+          width: 95%;
+        }
+      }
     </style>
   </head>
   <body class="h-full bg-white font-sans text-charcoal">
@@ -98,7 +212,12 @@
           <hr class="border-t border-dashed border-light-grey mb-24 lg:mb-40"/>
           <div class="mx-auto lg:w-[58.75vw]">
             <div class="group relative mb-24 lg:mb-40">
-              <img alt="" loading="lazy" class="w-full" src="../assets/demo.png"/>
+              <div class="video-thumbnail-container" onclick="window.openVideoModal('06.mp4');">
+                <img alt="Video thumbnail" loading="lazy" class="video-thumbnail w-full" src="../assets/06.jpg"/>
+                <div class="play-button-overlay">
+                  <div class="play-button-icon"></div>
+                </div>
+              </div>
             </div>
             <hr class="mb-24 border-t border-dashed border-light-grey lg:hidden"/>
             <div class="flex flex-col gap-24 mb-24 lg:flex-row lg:gap-40 lg:mb-40">
@@ -393,7 +512,79 @@ import * as route2 from "/assets/article-fAGJ-wvy.js";
       };
       import("../assets/entry.client-BTH2fNc4.js");
     </script>
-    <script>window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_292\":-5,\"_293\":-5},\"loaderData\",{\"_3\":4,\"_9\":10,\"_15\":16},\"root\",{\"_5\":6,\"_7\":8},\"theme\",\"light\",\"fontSize\",\"small\",\"routes/web/layout\",{\"_11\":12},\"sanity\",{\"_13\":14},\"preview\",false,\"routes/web/article\",{\"_17\":18,\"_236\":237,\"_288\":289,\"_290\":291},\"initial\",{\"_19\":20},\"data\",{\"_21\":22},\"article\",{\"_23\":24,\"_25\":-5,\"_26\":27,\"_205\":206,\"_215\":-5,\"_216\":217,\"_218\":219,\"_220\":221,\"_222\":223,\"_224\":225,\"_228\":229,\"_230\":231,\"_232\":233,\"_234\":235},\"_id\",\"01181966-ca1c-4ff0-ba9a-faf21da8a73b\",\"audioSrc\",\"content\",[28,46,55,64,77,84,100,107,131,138,150,157,164,189,197],{\"_29\":30,\"_31\":32,\"_33\":34,\"_42\":43,\"_44\":45},\"_key\",\"dc4c4b8a7b87\",\"_type\",\"block\",\"children\",[35],{\"_29\":36,\"_31\":37,\"_38\":39,\"_40\":41},\"41aaa728c411\",\"span\",\"marks\",[],\"text\",\"Skin Cleansing without or with Compromise: Soaps and Syndets\",\"markDefs\",[],\"style\",\"h3\",{\"_29\":47,\"_31\":32,\"_33\":48,\"_42\":54,\"_44\":8},\"ceafdf146ba2\",[49],{\"_29\":50,\"_31\":37,\"_38\":51,\"_40\":53},\"088bdb4ae3270\",[52],\"em\",\"Mijaljica, D.; Spada, F.; Harrison, I.P. Skin Cleansing without or with Compromise: Soaps and Syndets. Molecules 2022, 27, 2010.\",[],{\"_29\":56,\"_31\":32,\"_33\":57,\"_42\":62,\"_44\":63},\"536d64fc1cb0\",[58],{\"_29\":59,\"_31\":37,\"_38\":60,\"_40\":61},\"aeefb2c724620\",[],\"\",[],\"normal\",{\"_29\":65,\"_31\":32,\"_33\":66,\"_42\":76,\"_44\":63},\"22dc2d380de8\",[67,72],{\"_29\":68,\"_31\":37,\"_38\":69,\"_40\":71},\"26fb4c23b8070\",[70],\"strong\",\"Humans might have been cleansing for thousands of years, but the cleansing products at our disposal were not always the kindest to the skin. \",{\"_29\":73,\"_31\":37,\"_38\":74,\"_40\":75},\"26fb4c23b8071\",[],\"This is because, while traditional soaps might do a good job of cleansing, their chemical properties can upset the skin's protective layer. The answer to this was the development of syndets—or synthetic detergents—a gentler alternative that supports the skin's natural structure and protective role. Even so, soap-based cleansers are often considered \\\"natural\\\", and by association perceived as safer than synthetic cleansers.\",[],{\"_29\":78,\"_31\":32,\"_33\":79,\"_42\":83,\"_44\":63},\"5c67cf248ab8\",[80],{\"_29\":81,\"_31\":37,\"_38\":82,\"_40\":61},\"abc88213c2330\",[],[],{\"_29\":85,\"_31\":32,\"_33\":86,\"_42\":99,\"_44\":63},\"a3b1aea83fa9\",[87,91,95],{\"_29\":88,\"_31\":37,\"_38\":89,\"_40\":90},\"ff8eea0362c20\",[],\"Soaps were used by many ancient civilizations. According to a Roman legend, soap-making began on Mount Sapo, where animal fat and plant ash were mixed with rainwater to create a washing solution. By the 10th century, soap-making was common in Europe, but it was a luxury for the rich. It wasn’t until the 19th century that soap was widely available. Traditional soap is made through a process called saponification (which translates to “conversion into soap”). During this process, animal or plant-based fats (which contain fatty acids) are mixed with a strong base (alkaline chemical), creating surfactant molecules. This process results in a product with a high pH. \",{\"_29\":92,\"_31\":37,\"_38\":93,\"_40\":94},\"ff8eea0362c21\",[70],\"pH is a scale (between 1-14) that measures how acidic or basic a substance is, with lower numbers being acidic, higher numbers being basic, and 7 being neutral.\",{\"_29\":96,\"_31\":37,\"_38\":97,\"_40\":98},\"ff8eea0362c22\",[],\" Syndets are a more recent invention and have been around for about 100 years. They became popular after the 1940s, when people started seeking gentler hygiene products with fewer side effects on the skin’s protective layer. Because syndets are synthetic surfactant molecules made in a lab through different processes that do not involve saponification, they have a lower pH.\",[],{\"_29\":101,\"_31\":32,\"_33\":102,\"_42\":106,\"_44\":63},\"4bdee34adff5\",[103],{\"_29\":104,\"_31\":37,\"_38\":105,\"_40\":61},\"5b2bad6dc59f0\",[],[],{\"_29\":108,\"_31\":32,\"_33\":109,\"_42\":130,\"_44\":63},\"3c7fb438008f\",[110,114,118,122,126],{\"_29\":111,\"_31\":37,\"_38\":112,\"_40\":113},\"d19b6fe9bd6f0\",[],\"Even though soaps and syndets are made differently, both types of cleansers contain surfactants— molecules that have both water- and oil-loving parts—allowing them to dissolve excess oil and other impurities by mixing them with water in order to be rinsed off. \",{\"_29\":115,\"_31\":37,\"_38\":116,\"_40\":117},\"d19b6fe9bd6f1\",[70],\"The important difference between soaps and syndets is their pH.\",{\"_29\":119,\"_31\":37,\"_38\":120,\"_40\":121},\"d19b6fe9bd6f2\",[],\" The skin has a slightly low (or acidic) pH, while soap has a higher (or alkaline) pH. On the other hand, syndets are closer to the skin's natural pH. \",{\"_29\":123,\"_31\":37,\"_38\":124,\"_40\":125},\"d19b6fe9bd6f3\",[70],\"This means soaps don't match the skin's pH, but syndets do, making them gentler on the skin\",{\"_29\":127,\"_31\":37,\"_38\":128,\"_40\":129},\"d19b6fe9bd6f4\",[],\". Studies have shown that alkaline soaps can negatively affect the skin’s natural structure and function making pH an important factor in cleanser choice.\",[],{\"_29\":132,\"_31\":32,\"_33\":133,\"_42\":137,\"_44\":63},\"feac4942f777\",[134],{\"_29\":135,\"_31\":37,\"_38\":136,\"_40\":61},\"b15648e7ea890\",[],[],{\"_29\":139,\"_31\":32,\"_33\":140,\"_42\":149,\"_44\":63},\"ecdaa0285786\",[141,145],{\"_29\":142,\"_31\":37,\"_38\":143,\"_40\":144},\"85004f7136ad0\",[],\"This review helps us understand that while traditional soaps and syndets both cleanse the skin, the high pH of soaps does not match the pH of skin which can cause damage to the skin over time—\",{\"_29\":146,\"_31\":37,\"_38\":147,\"_40\":148},\"85004f7136ad1\",[70],\"an example of the common conception that ‘natural’ products, like soap, are better or safer than synthetic products like syndets.\",[],{\"_29\":151,\"_31\":32,\"_33\":152,\"_42\":156,\"_44\":63},\"61451469e327\",[153],{\"_29\":154,\"_31\":37,\"_38\":155,\"_40\":61},\"1bf111dce18e\",[],[],{\"_29\":158,\"_31\":32,\"_33\":159,\"_42\":163,\"_44\":63},\"423931af25bb\",[160],{\"_29\":161,\"_31\":37,\"_38\":162,\"_40\":61},\"79a33de41ff4\",[],[],{\"_29\":165,\"_31\":32,\"_33\":166,\"_42\":180,\"_44\":63},\"853615ff4777\",[167,171,176],{\"_29\":168,\"_31\":37,\"_38\":169,\"_40\":170},\"0e3fb7ebc2e70\",[],\"For further information read the \",{\"_29\":172,\"_31\":37,\"_38\":173,\"_40\":175},\"9112a12a4423\",[174],\"91d9c4e3a4bf\",\"full paper\",{\"_29\":177,\"_31\":37,\"_38\":178,\"_40\":179},\"8a518ffcda7f\",[],\".\",[181],{\"_29\":174,\"_31\":182,\"_183\":184,\"_185\":184,\"_186\":187,\"_40\":-5,\"_188\":183},\"link\",\"external\",\"https://www.mdpi.com/1420-3049/27/6/2010\",\"href\",\"openInNewWindow\",true,\"type\",{\"_29\":190,\"_31\":32,\"_33\":191,\"_42\":195,\"_44\":196},\"736a157f31db\",[192],{\"_29\":193,\"_31\":37,\"_38\":194,\"_40\":61},\"8350d27ab875\",[],[],\"line\",{\"_29\":198,\"_31\":32,\"_33\":199,\"_42\":204,\"_44\":8},\"9c1911f45ffd\",[200],{\"_29\":201,\"_31\":37,\"_38\":202,\"_40\":203},\"3bd6c594912c\",[52],\"Deciem's parent company, The Estee Lauder Companies, is a member of the Personal Care Products Council (\\\"PCPC\\\"), the rightsholder of this article. Neither the publishers, the journal, PCPC, nor the author(s) endorse Deciem, The Ordinary or its brands and products.\",[],\"featuredImage\",{\"_31\":207,\"_208\":209,\"_210\":211},\"image\",\"alt\",\"Traditional Soap vs. Modern Cleansers\",\"asset\",{\"_212\":213,\"_31\":214},\"_ref\",\"image-632b30382e600995eabd156c5eab45174f1ef6aa-1430x801-png\",\"reference\",\"noIndex\",\"number\",9,\"publishAt\",\"2025-01-22T08:06:00.000Z\",\"readingTime\",\"2\",\"seoDescription\",\"Skin Cleansing without or with Compromise: Soaps and Syndets.\",\"seoImage\",{\"_31\":207,\"_210\":226},{\"_212\":227,\"_31\":214},\"image-6ef0ad0787a9d0a7e93af1950218d4ef04119b17-4000x2250-jpg\",\"seoTitle\",\"“Natural” soap might be damaging your skin | The Ordinary\",\"title\",\"“Natural” soap might be damaging your skin\",\"videoUrl\",\"https://www.youtube.com/embed/F1KI43VXUhw?si=8AJpYt9X0P-hgTtQ\u0026autoplay=1\u0026rel=0\",\"viewCount\",7819,\"allArticles\",{\"_19\":238},{\"_239\":240},\"articles\",[241,246,253,260,267,274,281],{\"_23\":24,\"_216\":217,\"_218\":219,\"_242\":243,\"_230\":231},\"slug\",{\"_31\":242,\"_244\":245},\"current\",\"natural-soap-might-be-damaging-your-skin\",{\"_23\":247,\"_216\":248,\"_218\":249,\"_242\":250,\"_230\":252},\"335985b4-1567-47df-a264-b97aaa4146ae\",8,\"2025-01-22T08:05:00.000Z\",{\"_31\":242,\"_244\":251},\"chemical-and-mineral-sunscreens-are-surprisingly-similar\",\"Chemical and mineral sunscreens are surprisingly similar\",{\"_23\":254,\"_216\":255,\"_218\":256,\"_242\":257,\"_230\":259},\"c5ad37a6-d14a-4c83-a909-ac9a8e3d39f9\",7,\"2025-01-22T08:04:00.000Z\",{\"_31\":242,\"_244\":258},\"theres-more-to-coral-bleaching-than-your-spf\",\"There’s more to coral bleaching than your SPF\",{\"_23\":261,\"_216\":262,\"_218\":263,\"_242\":264,\"_230\":266},\"8693b317-add5-4136-a52f-7fc9cb543f10\",6,\"2025-01-22T08:03:00.000Z\",{\"_31\":242,\"_244\":265},\"parabens-are-nothing-to-be-scared-of\",\"Parabens are nothing to be scared of\",{\"_23\":268,\"_216\":269,\"_218\":270,\"_242\":271,\"_230\":273},\"ad261530-e864-4b9a-a810-a133804c8a88\",5,\"2025-01-22T08:02:00.000Z\",{\"_31\":242,\"_244\":272},\"natural-ingredients-can-be-toxic-too\",\"Natural ingredients can be toxic too\",{\"_23\":275,\"_216\":276,\"_218\":277,\"_242\":278,\"_230\":280},\"841a333b-3143-4c1e-b0f4-0c19bf292e54\",4,\"2025-01-22T08:01:00.000Z\",{\"_31\":242,\"_244\":279},\"not-tested-on-animals-is-already-an-industry-standard\",\"“Not tested on animals” is already an industry standard\",{\"_23\":282,\"_216\":283,\"_218\":284,\"_242\":285,\"_230\":287},\"f66cb674-cf03-4785-9b48-1006f9b3d0ce\",3,\"2025-01-22T08:00:00.000Z\",{\"_31\":242,\"_244\":286},\"the-aluminum-in-your-deodorant-is-not-a-health-risk\",\"The aluminum in your deodorant is not a health risk but...\",\"query\",\"{\\n\\\"article\\\": *[_type == \\\"article\\\" \u0026\u0026 slug.current == $slug][0]{\\n  _id,\\n  number,\\n  title,\\n  publishAt,\\n  seoTitle,\\n  seoDescription,\\n  seoImage,\\n  featuredImage,\\n  videoUrl,\\n  readingTime,\\n  \\\"audioSrc\\\": audioSrc \\n{\\n  \\\"url\\\": asset-\u003eurl,\\n  \\\"title\\\": asset-\u003eoriginalFilename\\n}\\n,\\n  noIndex,\\n  \\\"viewCount\\\": coalesce(*[_type == \\\"articleViews\\\" \u0026\u0026 articleId == ^._id][0].viewCount, 0),\\n  content[]{\\n    ...,\\n    markDefs[]{\\n      ...,\\n      _type == \\\"link\\\" =\u003e \\n{\\n  text,\\n  type,\\n  openInNewWindow,\\n  \\\"href\\\": select(\\n    // Internal links.\\n    type == \\\"internal\\\" =\u003e coalesce(\\n      \\\"/\\\" +\\n      select(\\n        internal-\u003e_type == \\\"homepage\\\" =\u003e \\\"\\\",\\n        internal-\u003e_type == \\\"article\\\" =\u003e \\\"articles/\\\" + coalesce(internal-\u003eslug.current, \\\"\\\"),\\n        true =\u003e \\\"\\\"\\n      ),\\n      \\\"#\\\"\\n    ),\\n    // External links.\\n    type == \\\"external\\\" =\u003e coalesce(external, \\\"#\\\"),\\n    // Anything else.\\n    true =\u003e \\\"#\\\"\\n  ),\\n}\\n\\n    }\\n  }\\n}\\n}\",\"params\",{\"_242\":245},\"actionData\",\"errors\"]\n");</script>    <script>window.__reactRouterContext.streamController.close();</script>
+    <script>window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_292\":-5,\"_293\":-5},\"loaderData\",{\"_3\":4,\"_9\":10,\"_15\":16},\"root\",{\"_5\":6,\"_7\":8},\"theme\",\"light\",\"fontSize\",\"small\",\"routes/web/layout\",{\"_11\":12},\"sanity\",{\"_13\":14},\"preview\",false,\"routes/web/article\",{\"_17\":18,\"_236\":237,\"_288\":289,\"_290\":291},\"initial\",{\"_19\":20},\"data\",{\"_21\":22},\"article\",{\"_23\":24,\"_25\":-5,\"_26\":27,\"_205\":206,\"_215\":-5,\"_216\":217,\"_218\":219,\"_220\":221,\"_222\":223,\"_224\":225,\"_228\":229,\"_230\":231,\"_232\":233,\"_234\":235},\"_id\",\"01181966-ca1c-4ff0-ba9a-faf21da8a73b\",\"audioSrc\",\"content\",[28,46,55,64,77,84,100,107,131,138,150,157,164,189,197],{\"_29\":30,\"_31\":32,\"_33\":34,\"_42\":43,\"_44\":45},\"_key\",\"dc4c4b8a7b87\",\"_type\",\"block\",\"children\",[35],{\"_29\":36,\"_31\":37,\"_38\":39,\"_40\":41},\"41aaa728c411\",\"span\",\"marks\",[],\"text\",\"Skin Cleansing without or with Compromise: Soaps and Syndets\",\"markDefs\",[],\"style\",\"h3\",{\"_29\":47,\"_31\":32,\"_33\":48,\"_42\":54,\"_44\":8},\"ceafdf146ba2\",[49],{\"_29\":50,\"_31\":37,\"_38\":51,\"_40\":53},\"088bdb4ae3270\",[52],\"em\",\"Mijaljica, D.; Spada, F.; Harrison, I.P. Skin Cleansing without or with Compromise: Soaps and Syndets. Molecules 2022, 27, 2010.\",[],{\"_29\":56,\"_31\":32,\"_33\":57,\"_42\":62,\"_44\":63},\"536d64fc1cb0\",[58],{\"_29\":59,\"_31\":37,\"_38\":60,\"_40\":61},\"aeefb2c724620\",[],\"\",[],\"normal\",{\"_29\":65,\"_31\":32,\"_33\":66,\"_42\":76,\"_44\":63},\"22dc2d380de8\",[67,72],{\"_29\":68,\"_31\":37,\"_38\":69,\"_40\":71},\"26fb4c23b8070\",[70],\"strong\",\"Humans might have been cleansing for thousands of years, but the cleansing products at our disposal were not always the kindest to the skin. \",{\"_29\":73,\"_31\":37,\"_38\":74,\"_40\":75},\"26fb4c23b8071\",[],\"This is because, while traditional soaps might do a good job of cleansing, their chemical properties can upset the skin's protective layer. The answer to this was the development of syndets—or synthetic detergents—a gentler alternative that supports the skin's natural structure and protective role. Even so, soap-based cleansers are often considered \\\"natural\\\", and by association perceived as safer than synthetic cleansers.\",[],{\"_29\":78,\"_31\":32,\"_33\":79,\"_42\":83,\"_44\":63},\"5c67cf248ab8\",[80],{\"_29\":81,\"_31\":37,\"_38\":82,\"_40\":61},\"abc88213c2330\",[],[],{\"_29\":85,\"_31\":32,\"_33\":86,\"_42\":99,\"_44\":63},\"a3b1aea83fa9\",[87,91,95],{\"_29\":88,\"_31\":37,\"_38\":89,\"_40\":90},\"ff8eea0362c20\",[],\"Soaps were used by many ancient civilizations. According to a Roman legend, soap-making began on Mount Sapo, where animal fat and plant ash were mixed with rainwater to create a washing solution. By the 10th century, soap-making was common in Europe, but it was a luxury for the rich. It wasn’t until the 19th century that soap was widely available. Traditional soap is made through a process called saponification (which translates to “conversion into soap”). During this process, animal or plant-based fats (which contain fatty acids) are mixed with a strong base (alkaline chemical), creating surfactant molecules. This process results in a product with a high pH. \",{\"_29\":92,\"_31\":37,\"_38\":93,\"_40\":94},\"ff8eea0362c21\",[70],\"pH is a scale (between 1-14) that measures how acidic or basic a substance is, with lower numbers being acidic, higher numbers being basic, and 7 being neutral.\",{\"_29\":96,\"_31\":37,\"_38\":97,\"_40\":98},\"ff8eea0362c22\",[],\" Syndets are a more recent invention and have been around for about 100 years. They became popular after the 1940s, when people started seeking gentler hygiene products with fewer side effects on the skin’s protective layer. Because syndets are synthetic surfactant molecules made in a lab through different processes that do not involve saponification, they have a lower pH.\",[],{\"_29\":101,\"_31\":32,\"_33\":102,\"_42\":106,\"_44\":63},\"4bdee34adff5\",[103],{\"_29\":104,\"_31\":37,\"_38\":105,\"_40\":61},\"5b2bad6dc59f0\",[],[],{\"_29\":108,\"_31\":32,\"_33\":109,\"_42\":130,\"_44\":63},\"3c7fb438008f\",[110,114,118,122,126],{\"_29\":111,\"_31\":37,\"_38\":112,\"_40\":113},\"d19b6fe9bd6f0\",[],\"Even though soaps and syndets are made differently, both types of cleansers contain surfactants— molecules that have both water- and oil-loving parts—allowing them to dissolve excess oil and other impurities by mixing them with water in order to be rinsed off. \",{\"_29\":115,\"_31\":37,\"_38\":116,\"_40\":117},\"d19b6fe9bd6f1\",[70],\"The important difference between soaps and syndets is their pH.\",{\"_29\":119,\"_31\":37,\"_38\":120,\"_40\":121},\"d19b6fe9bd6f2\",[],\" The skin has a slightly low (or acidic) pH, while soap has a higher (or alkaline) pH. On the other hand, syndets are closer to the skin's natural pH. \",{\"_29\":123,\"_31\":37,\"_38\":124,\"_40\":125},\"d19b6fe9bd6f3\",[70],\"This means soaps don't match the skin's pH, but syndets do, making them gentler on the skin\",{\"_29\":127,\"_31\":37,\"_38\":128,\"_40\":129},\"d19b6fe9bd6f4\",[],\". Studies have shown that alkaline soaps can negatively affect the skin’s natural structure and function making pH an important factor in cleanser choice.\",[],{\"_29\":132,\"_31\":32,\"_33\":133,\"_42\":137,\"_44\":63},\"feac4942f777\",[134],{\"_29\":135,\"_31\":37,\"_38\":136,\"_40\":61},\"b15648e7ea890\",[],[],{\"_29\":139,\"_31\":32,\"_33\":140,\"_42\":149,\"_44\":63},\"ecdaa0285786\",[141,145],{\"_29\":142,\"_31\":37,\"_38\":143,\"_40\":144},\"85004f7136ad0\",[],\"This review helps us understand that while traditional soaps and syndets both cleanse the skin, the high pH of soaps does not match the pH of skin which can cause damage to the skin over time—\",{\"_29\":146,\"_31\":37,\"_38\":147,\"_40\":148},\"85004f7136ad1\",[70],\"an example of the common conception that ‘natural’ products, like soap, are better or safer than synthetic products like syndets.\",[],{\"_29\":151,\"_31\":32,\"_33\":152,\"_42\":156,\"_44\":63},\"61451469e327\",[153],{\"_29\":154,\"_31\":37,\"_38\":155,\"_40\":61},\"1bf111dce18e\",[],[],{\"_29\":158,\"_31\":32,\"_33\":159,\"_42\":163,\"_44\":63},\"423931af25bb\",[160],{\"_29\":161,\"_31\":37,\"_38\":162,\"_40\":61},\"79a33de41ff4\",[],[],{\"_29\":165,\"_31\":32,\"_33\":166,\"_42\":180,\"_44\":63},\"853615ff4777\",[167,171,176],{\"_29\":168,\"_31\":37,\"_38\":169,\"_40\":170},\"0e3fb7ebc2e70\",[],\"For further information read the \",{\"_29\":172,\"_31\":37,\"_38\":173,\"_40\":175},\"9112a12a4423\",[174],\"91d9c4e3a4bf\",\"full paper\",{\"_29\":177,\"_31\":37,\"_38\":178,\"_40\":179},\"8a518ffcda7f\",[],\".\",[181],{\"_29\":174,\"_31\":182,\"_183\":184,\"_185\":184,\"_186\":187,\"_40\":-5,\"_188\":183},\"link\",\"external\",\"https://www.mdpi.com/1420-3049/27/6/2010\",\"href\",\"openInNewWindow\",true,\"type\",{\"_29\":190,\"_31\":32,\"_33\":191,\"_42\":195,\"_44\":196},\"736a157f31db\",[192],{\"_29\":193,\"_31\":37,\"_38\":194,\"_40\":61},\"8350d27ab875\",[],[],\"line\",{\"_29\":198,\"_31\":32,\"_33\":199,\"_42\":204,\"_44\":8},\"9c1911f45ffd\",[200],{\"_29\":201,\"_31\":37,\"_38\":202,\"_40\":203},\"3bd6c594912c\",[52],\"Deciem's parent company, The Estee Lauder Companies, is a member of the Personal Care Products Council (\\\"PCPC\\\"), the rightsholder of this article. Neither the publishers, the journal, PCPC, nor the author(s) endorse Deciem, The Ordinary or its brands and products.\",[],\"featuredImage\",{\"_31\":207,\"_208\":209,\"_210\":211},\"image\",\"alt\",\"Traditional Soap vs. Modern Cleansers\",\"asset\",{\"_212\":213,\"_31\":214},\"_ref\",\"image-632b30382e600995eabd156c5eab45174f1ef6aa-1430x801-png\",\"reference\",\"noIndex\",\"number\",9,\"publishAt\",\"2025-01-22T08:06:00.000Z\",\"readingTime\",\"2\",\"seoDescription\",\"Skin Cleansing without or with Compromise: Soaps and Syndets.\",\"seoImage\",{\"_31\":207,\"_210\":226},{\"_212\":227,\"_31\":214},\"image-6ef0ad0787a9d0a7e93af1950218d4ef04119b17-4000x2250-jpg\",\"seoTitle\",\"“Natural” soap might be damaging your skin | The Ordinary\",\"title\",\"“Natural” soap might be damaging your skin\",\"videoUrl\",\"https://www.youtube.com/embed/F1KI43VXUhw?si=8AJpYt9X0P-hgTtQ\u0026autoplay=1\u0026rel=0\",\"viewCount\",7819,\"allArticles\",{\"_19\":238},{\"_239\":240},\"articles\",[241,246,253,260,267,274,281],{\"_23\":24,\"_216\":217,\"_218\":219,\"_242\":243,\"_230\":231},\"slug\",{\"_31\":242,\"_244\":245},\"current\",\"natural-soap-might-be-damaging-your-skin\",{\"_23\":247,\"_216\":248,\"_218\":249,\"_242\":250,\"_230\":252},\"335985b4-1567-47df-a264-b97aaa4146ae\",8,\"2025-01-22T08:05:00.000Z\",{\"_31\":242,\"_244\":251},\"chemical-and-mineral-sunscreens-are-surprisingly-similar\",\"Chemical and mineral sunscreens are surprisingly similar\",{\"_23\":254,\"_216\":255,\"_218\":256,\"_242\":257,\"_230\":259},\"c5ad37a6-d14a-4c83-a909-ac9a8e3d39f9\",7,\"2025-01-22T08:04:00.000Z\",{\"_31\":242,\"_244\":258},\"theres-more-to-coral-bleaching-than-your-spf\",\"There’s more to coral bleaching than your SPF\",{\"_23\":261,\"_216\":262,\"_218\":263,\"_242\":264,\"_230\":266},\"8693b317-add5-4136-a52f-7fc9cb543f10\",6,\"2025-01-22T08:03:00.000Z\",{\"_31\":242,\"_244\":265},\"parabens-are-nothing-to-be-scared-of\",\"Parabens are nothing to be scared of\",{\"_23\":268,\"_216\":269,\"_218\":270,\"_242\":271,\"_230\":273},\"ad261530-e864-4b9a-a810-a133804c8a88\",5,\"2025-01-22T08:02:00.000Z\",{\"_31\":242,\"_244\":272},\"natural-ingredients-can-be-toxic-too\",\"Natural ingredients can be toxic too\",{\"_23\":275,\"_216\":276,\"_218\":277,\"_242\":278,\"_230\":280},\"841a333b-3143-4c1e-b0f4-0c19bf292e54\",4,\"2025-01-22T08:01:00.000Z\",{\"_31\":242,\"_244\":279},\"not-tested-on-animals-is-already-an-industry-standard\",\"“Not tested on animals” is already an industry standard\",{\"_23\":282,\"_216\":283,\"_218\":284,\"_242\":285,\"_230\":287},\"f66cb674-cf03-4785-9b48-1006f9b3d0ce\",3,\"2025-01-22T08:00:00.000Z\",{\"_31\":242,\"_244\":286},\"the-aluminum-in-your-deodorant-is-not-a-health-risk\",\"The aluminum in your deodorant is not a health risk but...\",\"query\",\"{\\n\\\"article\\\": *[_type == \\\"article\\\" \u0026\u0026 slug.current == $slug][0]{\\n  _id,\\n  number,\\n  title,\\n  publishAt,\\n  seoTitle,\\n  seoDescription,\\n  seoImage,\\n  featuredImage,\\n  videoUrl,\\n  readingTime,\\n  \\\"audioSrc\\\": audioSrc \\n{\\n  \\\"url\\\": asset-\u003eurl,\\n  \\\"title\\\": asset-\u003eoriginalFilename\\n}\\n,\\n  noIndex,\\n  \\\"viewCount\\\": coalesce(*[_type == \\\"articleViews\\\" \u0026\u0026 articleId == ^._id][0].viewCount, 0),\\n  content[]{\\n    ...,\\n    markDefs[]{\\n      ...,\\n      _type == \\\"link\\\" =\u003e \\n{\\n  text,\\n  type,\\n  openInNewWindow,\\n  \\\"href\\\": select(\\n    // Internal links.\\n    type == \\\"internal\\\" =\u003e coalesce(\\n      \\\"/\\\" +\\n      select(\\n        internal-\u003e_type == \\\"homepage\\\" =\u003e \\\"\\\",\\n        internal-\u003e_type == \\\"article\\\" =\u003e \\\"articles/\\\" + coalesce(internal-\u003eslug.current, \\\"\\\"),\\n        true =\u003e \\\"\\\"\\n      ),\\n      \\\"#\\\"\\n    ),\\n    // External links.\\n    type == \\\"external\\\" =\u003e coalesce(external, \\\"#\\\"),\\n    // Anything else.\\n    true =\u003e \\\"#\\\"\\n  ),\\n}\\n\\n    }\\n  }\\n}\\n}\",\"params\",{\"_242\":245},\"actionData\",\"errors\"]\n");    </script>    <script>window.__reactRouterContext.streamController.close();</script>
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+      <div class="video-modal-content">
+        <button class="video-modal-close" onclick="window.closeVideoModal()">&times;</button>
+        <video id="videoPlayer" controls>
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <script>
+      window.openVideoModal = function(videoFileName) {
+        const modal = document.getElementById('videoModal');
+        const videoPlayer = document.getElementById('videoPlayer');
+        
+        if (!modal || !videoPlayer) {
+          console.error('Modal elements not found');
+          return;
+        }
+        
+        videoPlayer.src = '../assets/' + videoFileName;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        // Play the video
+        videoPlayer.play().catch(function(error) {
+          console.log('Video play failed:', error);
+        });
+      };
+
+      window.closeVideoModal = function() {
+        const modal = document.getElementById('videoModal');
+        const videoPlayer = document.getElementById('videoPlayer');
+        
+        if (modal) modal.classList.remove('active');
+        if (videoPlayer) {
+          videoPlayer.pause();
+          videoPlayer.src = '';
+        }
+        document.body.style.overflow = '';
+      };
+
+      // Setup event listeners after DOM is ready
+      (function() {
+        function setupModalListeners() {
+          const modal = document.getElementById('videoModal');
+          if (!modal) {
+            setTimeout(setupModalListeners, 100);
+            return;
+          }
+          
+          // Close modal when clicking outside
+          modal.addEventListener('click', function(e) {
+            if (e.target === this) {
+              window.closeVideoModal();
+            }
+          });
+
+          // Close modal with Escape key
+          document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+              window.closeVideoModal();
+            }
+          });
+        }
+        
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', setupModalListeners);
+        } else {
+          setupModalListeners();
+        }
+      })();
+    </script>
   </body>
 </html>
 
